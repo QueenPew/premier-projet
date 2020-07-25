@@ -1,0 +1,22 @@
+
+<div *ngIf="hero">
+
+    <h2> Détails du jeu vidéo {{hero.name | uppercase}}  </h2>
+    <div>
+      <br>
+        <h2>{{hero.description}}</h2>
+        <img src="{{hero.image}}" alt="" height="480" width="720">
+        <br>
+      <div class="a">
+      <a href="{{hero.ref}}" class="button" > voir le jeu  </a>
+ 
+      <button (click)="afficherToto()">test </button>
+      <div *ngIf="toto">
+          bonjour Toto 
+          <button (click)="goBack()">go back</button>
+      </div> 
+      </div> 
+    </div>
+  </div>
+  
+
